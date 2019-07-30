@@ -1,3 +1,3 @@
 steps:
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'graphql', '--image', 'gcr.io/deft-landing-244816/graphql', '--namespace', 'default']  
+-name: 'gcr.io/cloud-builders/gcloud'
+ args: ['beta', 'run', 'deploy', 'graphql', '--image', 'gcr.io/deft-landing-244816/graphql', '--namespace', 'default', '--cluster', 'standard-cluster-1', '--cluster-location', 'us-central1-a', '--platform', 'gke'] 
